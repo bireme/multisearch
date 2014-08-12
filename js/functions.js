@@ -16,7 +16,9 @@ $(document).ready(function(){
         path:'js/ZeroClipboard.swf',
         copy:function(){return $('textarea#showSource').val();},
         afterCopy:function(){
+            $("#clipboard").stop();
             $("#clipboard").css({ "visibility": "visible" });
+            $("#clipboard").css({ "opacity": 1 });
             $("#clipboard").animate({ "opacity": 0 }, 5000);
             $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, "slow");
         }
@@ -94,7 +96,7 @@ $(document).ready(function(){
         }
 
         if ($('.popover').length == 0) {
-            var text = "<script src=\"http://reddes.teste.bvsalud.org/support/js/multisearch-widget.js\"></script>\n";
+            var text = "<script src=\"http://reddes.bvsalud.org/support/js/multisearch-widget.js\"></script>\n";
             text = text.concat("<form class=\"vhl-search-form\" action=\"" + iahx + "\" method=\"get\" id=\"searchForm\" onsubmit=\"if(searchForm.q.value=='" + locate[0] + "') searchForm.q.value = '';\">\n");
             text = text.concat("    <input type=\"hidden\" name=\"lang\" value=\"" + lang + "\" />\n");
             text = text.concat("    <input type=\"hidden\" name=\"home_url\" value=\"" + url + "\" />\n");
