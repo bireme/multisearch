@@ -115,7 +115,7 @@
             <div class="form-inline">
                 <div class="form-group">
                     <label class="sr-only" for="inputLang">Idioma da BVS</label>
-                    <select class="form-control" id="inputLang" name="inputLang">
+                    <select class="form-control empty" id="inputLang" name="inputLang">
                         <option value="" id="selected" selected><?php echo $locale[$lang]['selected']; ?></option>
                         <?php for ($i=0; $i < count($lang_vector); $i++) { ?> 
                             <option value="<?php echo $acronyms[$i]; ?>"><?php echo $words[$acronyms[$i]]; ?></option>
