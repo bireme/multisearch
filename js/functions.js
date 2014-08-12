@@ -51,7 +51,6 @@ $(document).ready(function(){
         //notice[notice.length] = errors[jQuery.inArray( language, errors ) + 1];
 
         if(iahx == ""){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#inputIAHX").popover({
                 placement : 'right',
                 content : notice[0]
@@ -59,7 +58,6 @@ $(document).ready(function(){
             $("#inputIAHX").popover('show');
         }
         if(iahx.substring(0, 7) != "http://"){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#inputIAHX").popover({
                 placement : 'right',
                 content : notice[4]
@@ -67,7 +65,6 @@ $(document).ready(function(){
             $("#inputIAHX").popover('show');
         }
         if(url == ""){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#inputURL").popover({
                 placement : 'right',
                 content : notice[1]
@@ -75,7 +72,6 @@ $(document).ready(function(){
             $("#inputURL").popover('show');
         }
         if(url.substring(0, 7) != "http://"){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#inputURL").popover({
                 placement : 'right',
                 content : notice[4]
@@ -83,7 +79,6 @@ $(document).ready(function(){
             $("#inputURL").popover('show');
         }
         if(site == ""){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#sitename").popover({
                 placement : 'right',
                 content : notice[2]
@@ -91,7 +86,6 @@ $(document).ready(function(){
             $("#sitename").popover('show');
         }
         if(lang == ""){
-            $(".alert-success").css({ "visibility": "hidden" });
             $("#inputLang").popover({
                 placement : 'left',
                 content : notice[3]
@@ -127,6 +121,9 @@ $(document).ready(function(){
             $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, "slow");
             //$("html, body").animate({ scrollTop: $("#footer").offset().top }, "slow");
         }
+        else
+            $(".alert-success").css({ "visibility": "hidden" });
+
     });
 
     $(document).on('click','input:text',function(){
