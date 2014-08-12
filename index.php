@@ -55,7 +55,7 @@
     
     <div id="jumbo" class="jumbotron">
             <h1 class="text-center"><?php echo $locale[$lang]['main_title']; ?></h1>
-            <p class="text-center"><?php echo $locale[$lang]['info']; ?> <a href="http://wiki.bireme.org/pt/index.php/Pesquisa_MetaIAH_no_WordPress" target="_blank"><?php echo $locale[$lang]['main_title']; ?></a></p>
+            <p class="text-center"><?php echo $locale[$lang]['info']; ?> <a href="http://wiki.bireme.org/pt/index.php/Multi-Pesquisa_no_WordPress" target="_blank"><?php echo $locale[$lang]['main_title']; ?></a></p>
     </div>
 
     <!--div id="carousel" class="carousel slide">
