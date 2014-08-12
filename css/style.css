@@ -1,0 +1,102 @@
+body { background: url(../woody.png); }
+label {
+    color: dimgray;
+    font-weight: normal;
+    font-style: italic;
+}
+.popover  {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+.popover .arrow:after {
+    border-left-color: #f2dede !important;
+    border-right-color: #f2dede !important;
+}
+.jumbotron {
+    margin-bottom: 50px;
+    background-color: #FFF;
+    /*background-color: #333;*/
+    /*color: white;*/
+}
+.jumbotron h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.form-group {
+    margin-top: 10px;
+}
+.reverse-content {
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+#inputURL, #inputIAHX, #sitename {
+    width: 490px;
+    text-align: center;
+}
+textarea {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    min-width: 705px;
+}
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    background-color: #FFF !important;
+    cursor: text !important;
+}
+.msg {
+    width: 60%;
+    margin: 0 auto;
+}
+.notice {
+    display: none;
+}
+.alert-success {
+    visibility: hidden;
+}
+#clipboard {
+    visibility: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: blue;
+    padding-bottom: 20px
+}
+embed {
+    margin-bottom: 14px;
+}
+#copy-dynamic:hover {
+    text-decoration: none !important;
+    color: #428bca !important;
+}
+.language {
+    margin-right: 30px;
+    /*width: 9%;*/
+}
+.dropdown-toggle {
+    /*background-color: #333 !important;*/
+    background-color: #FFF !important;
+}
+.dropdown-menu { min-width: 115px; }
+
+#inputLang option { color: black; }
+.empty { color: #AAAAAA; }
+a#copy-dynamic:hover, a.hover { text-decoration: underline; color: #0000FF; }
+
+.carousel .item img {
+    height: 300px;
+    width: 100%;
+}
+
+.carousel-control {
+    /*height: 80px;*/
+    margin-top: 0;
+    font-size: 175px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
