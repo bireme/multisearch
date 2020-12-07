@@ -59,7 +59,7 @@ $(document).ready(function(){
             });
             $("#inputIAHX").popover('show');
         }
-        if(iahx.substring(0, 7) != "http://"){
+        if(iahx.substring(0, 7) != "http://" && iahx.substring(0, 8) != "https://"){
             $("#inputIAHX").popover({
                 placement : 'right',
                 content : notice[4]
@@ -73,7 +73,7 @@ $(document).ready(function(){
             });
             $("#inputURL").popover('show');
         }
-        if(url.substring(0, 7) != "http://"){
+        if(url.substring(0, 7) != "http://" && url.substring(0, 8) != "https://"){
             $("#inputURL").popover({
                 placement : 'right',
                 content : notice[4]
