@@ -145,7 +145,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.zclip.min.js"></script>
+    <!-- <script src="js/jquery.zclip.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/functions.js"></script>
